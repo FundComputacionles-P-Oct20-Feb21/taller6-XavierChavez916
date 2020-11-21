@@ -1,0 +1,31 @@
+
+
+Generar una miniespecificación que permita ingresar 4 estudiantes;
+por cada uno de ellos ingresar el nombre del estudiante,
+el promedio de ciclo. Presentar el siguiente reporte
+Estudiante 1	10	Aprobado
+Estudiante 2	6.9	Reprobado
+Estudiante 3	7	Aprobado
+Estudiante 4	5	Reprobado
+
+1. Inicio
+2. nom_estudiante, x(200)[{a-z},{A-Z}, {/}, {BS}]
+3. promedio, d[0,n]
+4. contador, i[0,n] <--1
+5. resultado_final,x(200)[{a-z},{A-Z}, {/}, {BS}]
+ 
+
+6. Mientras contador <=4 entonces
+7.	Escribir "Ingresar el nombre del estudiante"
+8. 	Leer nom_estudiante
+9.	Escribir "Ingresar el promedio del ciclo"
+10.	Leer promedio
+11.	Si promedio >=7 and promedio <=10 entonces
+12.		cadena_final <-- cadena_final + nom_estudiante + "\t" + promedio + "\t" + "Aprobado"
+13.	De lo contrario
+14.		cadena_final <-- cadena_final + nom_estudiante + "\t" + promedio + "\t" + "Reprobado"
+15.	Fin si
+16.	contador <-- contador  + 1	
+17. Fin mientras
+18. Escribir cadena_final
+19. Fin 
