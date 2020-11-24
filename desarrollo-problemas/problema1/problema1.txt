@@ -5,16 +5,17 @@ Realizar una miniespecificación que permita presentar en pantalla la siguiente 
 1. Inicio
 2. contador, i[0,n] <-- 1
 3. cadenaFinal, x(200)[{1-40},{a-z},{A-Z}, {/}, {BS}]
-4. den, i[0,n] <-- 19
-4. Mientras contador <= 6 entonces
-5. 	Si (contador MOD 2 )== 0 entonces
-6.		den <-- den + 10
-6.		cadena_final <-- cadena_final + contador + "/" + den 
-7. 	De lo contrario 
-8.		den <-- den - 9 
-9.		cadena_final <-- cadena_final + contador + "/" + den
-10.	Fin si
-11.	contador <-- contador + 1 
-12. Fin mientras
-13. Escribir cadenaFinal
-14. Fin
+4. cadena_final <-- ""
+5. den, i[0,n] <-- 19
+6. Mientras contador <= 6 entonces
+7. 	Si (contador MOD 2 )== 0 entonces
+8.		den <-- den + 10
+9.		cadena_final <-- cadena_final + contador + "/" + den 
+10. 	De lo contrario 
+11.		den <-- den - 9 
+12.		cadena_final <-- cadena_final + contador + "/" + den
+13.	Fin si
+14.	contador <-- contador + 1 
+15. Fin mientras
+16. Escribir cadenaFinal
+17. Fin

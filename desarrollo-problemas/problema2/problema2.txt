@@ -1,4 +1,4 @@
-
+Ccc
 Realizar una miniespecificación que permita pedir por teclado el nombre de 5 empleados. 
 Por cada empleado se debe solicitar el nombre, numero de días trabajados y costo del día trabajo.
 Calcular el valor a cancelar por la empresa para cada empleado Presentar un reporte como el siguiente:
@@ -14,17 +14,19 @@ Nombre 5	 12	$2	$24
 4. dias_trabajados, i [0,n]
 5. costo_dia, d[0,n]
 6. resultado, d[0,n] 
+7. cadena_final, x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}]
+8. cadena_final <-- ""
 
-6. Mientras contador <=5 entonces
-7.	Escribir "Ingresar el nombre del empleado"
-8.	Leer nombre_emple
-9.	Escribir "Ingresar el numero de dias trabajados"
-10.	Leer dias_trabajados
-11.	Escribir "Ingresar el costo del dia de trabajo"
-12.	Leer costo_dia
-13.	resultado <-- dias_trabajados * costo_dia
-14.	cadena_final <-- cadena_final + nombre + "\t" + numeroDias + "\t$" + costoDia + "\t$" + resultado "\n" 
-15.	contador <-- contador + 1
-16. Fin mientras
-17. Escribir cadena_final
-18. Fin 
+9. Mientras contador <=5 entonces
+10.	Escribir "Ingresar el nombre del empleado"
+11.	Leer nombre_emple
+12.	Escribir "Ingresar el numero de dias trabajados"
+13.	Leer dias_trabajados
+14.	Escribir "Ingresar el costo del dia de trabajo"
+15.	Leer costo_dia
+16.	resultado <-- dias_trabajados * costo_dia
+17.	cadena_final <-- cadena_final + nombre + "\t" + numeroDias + "\t$" + costoDia + "\t$" + resultado "\n" 
+18.	contador <-- contador + 1
+19. Fin mientras
+20. Escribir cadena_final
+21. Fin 

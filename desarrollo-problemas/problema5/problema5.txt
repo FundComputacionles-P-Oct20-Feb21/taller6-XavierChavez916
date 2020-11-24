@@ -31,42 +31,43 @@ Cliente tipo 1, compra computadora con precio $100 y el costo final a cancelar e
 4. tipo_cliente, i[0,n]
 5. contador, i[0,n] <-- 1
 6. cadena_final x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}, {$}, {,}]
-7. descuento, d[0,n]
-8. porcentaje, d[0,n]
+7. cadena_final <-- ""
+8. descuento, d[0,n]
+9. porcentaje, d[0,n]
 
-9. Mientras contador <= 7 entonces
-10.	Escribir "Ingrese el nombre del cliente por favor"
-11.	Leer cliente
-12.	Escribir "Ingrese el costo de la computadora" 
-13.	Leer costo_computadora
-14.	Escribir "Ingrese el tipo del cliente"
-15.	Leer tipo_cliente
+10. Mientras contador <= 7 entonces
+11.	Escribir "Ingrese el nombre del cliente por favor"
+12.	Leer cliente
+13.	Escribir "Ingrese el costo de la computadora" 
+14.	Leer costo_computadora
+15.	Escribir "Ingrese el tipo del cliente"
+16.	Leer tipo_cliente
 
-16.	Si(tipo_cliente == 1) entonces
-17.		porcentaje <-- (costo_computadora * 10)/100
-18.		descuento <-- costo_computadora - porcentaje
-19.		cadena_final <-- cadena_final + cliente + " cliente tipo" + 
+17.	Si(tipo_cliente == 1) entonces
+18.		porcentaje <-- (costo_computadora * 10)/100
+19.		descuento <-- costo_computadora - porcentaje
+20.		cadena_final <-- cadena_final + cliente + " cliente tipo" + 
  		tipo_cliente + "," + "compra compra computadora con precio" + 
 		" $" + costo_computadora + "y el costo final a cancelar es" +
 		" $" + descuento + "\n"
-20.	De lo contrario
-21.		Si(tipo_cliente ==2)entonces
-22.			porcentaje <-- (costo_computadora * 20)/100
-23.			descuento <-- costo_computadora - porcentaje
-24.     			cadena_final <-- cadena_final + cliente + " cliente tipo" + 
+21.	De lo contrario
+22.		Si(tipo_cliente ==2)entonces
+23.			porcentaje <-- (costo_computadora * 20)/100
+24.			descuento <-- costo_computadora - porcentaje
+25.     			cadena_final <-- cadena_final + cliente + " cliente tipo" + 
  			tipo_cliente + "," + " compra compra computadora con precio" + 
 			" $" + costo_computadora + " y el costo final a cancelar es" +
 		        	" $" + descuento + "\n"
-25.		De lo contrario 
-26.			cadena_final <-- cadena_final + cliente + " cliente tipo" + 
+26.		De lo contrario 
+27.			cadena_final <-- cadena_final + cliente + " cliente tipo" + 
  			tipo_cliente + "," + "compra compra computadora con precio" + 
 			" $" + costo_computadora + "y el costo final a cancelar es" +
 		        	" $" + costo_computadora + "\n"	
-27.		Fin si
-28.	Fin si 
-29.	contador <-- contador + 1
-30. Fin mientras
-31. Escribir cadena_final 
-32. Fin		
+28.		Fin si
+29.	Fin si 
+30.	contador <-- contador + 1
+31. Fin mientras
+32. Escribir cadena_final 
+33. Fin		
 
 

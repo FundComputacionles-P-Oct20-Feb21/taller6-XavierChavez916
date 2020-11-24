@@ -14,17 +14,18 @@ Jugador 5	60	50
 3. puntos, i[0,n]
 4. faltas, i[0,n]
 5. cadena_final, x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}]
-6. contador, i[0,n] <-- 1
+6. cadena_final <-- ""
+7. contador, i[0,n] <-- 1
 
-7. Mientras contador <= 10 entonces
-8.	Escribir "Ingrese el nombre del jugador"
-9.	Leer jugador
-10.	Escribir "Ingrese la cantidad de puntos anotados en la temporada"
-11.	Leer puntos
-12.	Escribir "Ingrese la cantidad de faltas de la temporada"
-13. 	Leer faltas
-14.	cadenaFinal <-- cadenaFinal + jugador + "\t" + puntos + "\t" + faltas + "\n"
-15.	contador <-- contador + 1
-16. Fin mientras
-17. Escribir cadena_final
-18. Fin  
+8. Mientras contador <= 10 entonces
+9.	Escribir "Ingrese el nombre del jugador"
+10.	Leer jugador
+11.	Escribir "Ingrese la cantidad de puntos anotados en la temporada"
+12.	Leer puntos
+13.	Escribir "Ingrese la cantidad de faltas de la temporada"
+14. 	Leer faltas
+15.	cadenaFinal <-- cadenaFinal + jugador + "\t" + puntos + "\t" + faltas + "\n"
+16.	contador <-- contador + 1
+17. Fin mientras
+18. Escribir cadena_final
+19. Fin  
